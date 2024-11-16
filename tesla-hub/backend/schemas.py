@@ -1,7 +1,7 @@
 from typing import List, Optional, Union
 from datetime import date
 # datetime, time
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class Token(BaseModel):
@@ -127,3 +127,30 @@ class ShowTeamMember(TeamMemberBase):
 
     class Config():
         orm_mode = True
+
+
+# Cars
+# ------------------------------------
+# Pydantic-Modell für die Antwort
+class CarResponse(BaseModel):
+    vin: str
+    factory_gated_date: Optional[date]
+    model: str
+    trim: Optional[str]
+    odometer: Optional[int]
+    vehicle_history: Optional[str]
+    photos_count: Optional[int]
+    first_entry_date: Optional[date]
+    days_in_stock: Optional[int]
+    heatpump: Optional[bool]
+    factory: Optional[str]
+    battery_capacity: Optional[float] = Field(default=None)
+    min_price: Optional[float]
+    max_price: Optional[float]
+    avg_price: Optional[float]
+    price_difference: Optional[float]
+    price_trend: Optional[str]  # Das Plus- oder Minuszeichen
+    current_price: Optional[float]
+
+class CarsResponse(BaseModel):
+    cars: List[CarResponse]
