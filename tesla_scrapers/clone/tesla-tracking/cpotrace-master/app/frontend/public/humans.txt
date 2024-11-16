@@ -1,0 +1,9 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TECHNOLOGY COLOPHON
+
+    JavaScript, HTML5, CSS3
+    React, Redux, Bootstrap
+    Babel, Webpack, Node.js
+    React Static Boilerplate

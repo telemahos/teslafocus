@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px) {
+
+  .content {
+    padding: 0 16px;
+  }
+
+}
+
+.tooltip {
+	padding: 3px;
+	border: 2px solid;
+	border-radius: 4px;
+	background-color: #eee;
+	justify-content: center;
+	align-items: center;
+  opacity: 1 !important;
+}
+
+.alignNavRows {
+  text-align: left;
+  padding-left: 33%;
+}
+
+.modalOverlay {
+    position: absolute;
+    width: 10000%;
+    height: 10000%;
+    background: rgba(255, 255, 255, 0.56);
+    z-index: 1;
+}

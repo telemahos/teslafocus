@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofort verfügbare Fahrzeuge</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background: #f4f4f4;
+    }
+    .car-image {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="text-center mb-4">Sofort verfügbare Fahrzeuge</h1>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="bestandsart">Bestandsart</label>
+          <select class="form-control" id="bestandsart">
+            <option value="">Alle</option>
+            <option value="neu">Neu</option>
+            <option value="model3">Model 3</option>
+            <option value="modelx">Model X</option>
+            <option value="modely">Model Y</option>
+            <option value="zubehör">Zubehör</option>
+            <option value="gebrauchtfahrzeuge">Gebrauchtfahrzeuge</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Version</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="performanceAbstandsritic" value="performanceAbstandsritic">
+            <label class="form-check-label" for="performanceAbstandsritic">Performance Abstandsritic</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="maximaleReichweiteAkku" value="maximaleReichweiteAkku">
+            <label class="form-check-label" for="maximaleReichweiteAkku">Maximale Reichweite mit Akkuantrieb</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="maximaleReichweiteHybrid" value="maximaleReichweiteHybrid">
+            <label class="form-check-label" for="maximaleReichweiteHybrid">Maximale Reichweite mit Hybridantrieb</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="model3Hinterradantrieb" value="model3Hinterradantrieb">
+            <label class="form-check-label" for="model3Hinterradantrieb">Model 3 Hinterradantrieb</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lackierung">Lackierung</label>
+          <select class="form-control" id="lackierung">
+            <option value="">Alle</option>
+            <option value="schwarz">Schwarz</option>
+            <option value="blau">Blau</option>
+            <option value="weiß">Weiß</option>
+            <option value="rot">Rot</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Räder</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="18zollFelgen" value="18zollFelgen">
+            <label class="form-check-label" for="18zollFelgen">18-Zoll Felgen</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="19zollFelgen" value="19zollFelgen">
+            <label class="form-check-label" for="19zollFelgen">19-Zoll Felgen</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="20zollFelgen" value="20zollFelgen">
+            <label class="form-check-label" for="20zollFelgen">20-Zoll Felgen</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="antrieb">Antrieb</label>
+          <select class="form-control" id="antrieb">
+            <option value="">Alle</option>
+            <option value="standard">Standard</option>
+            <option value="enhanced">Enhanced Autopilot</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Zusätzliche Optionen</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="zuatzausstattungPerformance" value="zuatzausstattungPerformance">
+            <label class="form-check-label" for="zuatzausstattungPerformance">Zusatzausstattung "Performance"</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="anhängerkupplung" value="anhängerkupplung">
+            <label class="form-check-label" for="anhängerkupplung">Anhängerkupplung</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="accelerationBoost" value="accelerationBoost">
+            <label class="form-check-label" for="accelerationBoost">Acceleration Boost</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="beizerseRücksitze" value="beizerseRücksitze">
+            <label class="form-check-label" for="beizerseRücksitze">Beizerse Rücksitze</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Baujahr</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="baujahr2024" value="2024">
+            <label class="form-check-label" for="baujahr2024">2024</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="baujahr2023" value="2023">
+            <label class="form-check-label" for="baujahr2023">2023</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="row" id="car-list">
+          <!-- Car cards will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
