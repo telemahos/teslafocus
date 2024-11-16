@@ -1,0 +1,8 @@
+fastapi==0.103.1
+uvicorn==0.21.1
+sqlalchemy==2.0.12
+psycopg2==2.9.10
+python-jose
+passlib
+python-multipart
+fastapi_pagination

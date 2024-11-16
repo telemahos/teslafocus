@@ -1,0 +1,41 @@
+"results": [
+        {
+            "CurrencyCode": "EUR",
+            "DamageDisclosure": false,
+            "DamageDisclosureStatus": null,
+            "DamageDisclosureGuids": [],
+            "FactoryGatedDate": "2021-07-10T02:08:28.000000",
+            "HasDamagePhotos": false,
+            "PAINT": [
+                "WHITE"
+            ],
+            "RegistrationDetails": {
+                "Country": "DE",
+                "firstRegistered": "2021-08-19T00:00:00"
+            },
+            "TRIM": [
+                "LRAWD"
+            ],
+            "TrimName": "Maximale Reichweite Allradantrieb",
+            "VehicleHistory": "PREVIOUS ACCIDENT(S)",
+            "VehiclePhotos": [],
+            "WHEELS": [
+                "NINETEEN"
+            ],
+            "WarrantyBatteryExpDate": "2029-08-27T00:00:00Z",
+            "WarrantyBatteryIsExpired": false,
+            "WarrantyBatteryMile": 192000,
+            "WarrantyBatteryYear": 8,
+            "WarrantyDriveUnitExpDate": "2029-08-27T00:00:00Z",
+            "WarrantyDriveUnitMile": 192000,
+            "WarrantyDriveUnitYear": 8,
+            "WarrantyMile": 80000,
+            "WarrantyVehicleExpDate": "2025-08-27T00:00:00Z",
+            "WarrantyVehicleIsExpired": false,
+            "WarrantyYear": 4,
+            "UsedVehicleLimitedWarrantyMile": 20000,
+            "UsedVehicleLimitedWarrantyYear": 1,
+            "OdometerTypeShort": "km",
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+# Scrapy specific
+# Ignore built egg-info and dist folders
+.eggs/
+dist/
+
+# Ignore temporary files created during scraping
+*.crawled
+*.pickle
+*.request
+
+# Ignore virtual environment
+.venv/
+env/
+
+# Ignore IDE and OS specific files
+.idea/
+.vscode/
+*.suo
+*.sln
+*.pdb
+
+# Ignore logs
+*.log
+
+# Ignore text editor backups
+*.bak
+*.swp
+
+# Secret files
+.env
+
+# Ignore test files
+__tests__/
+*.spec.js
+*.test.js
+__pycache__/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore documentation 
+*.md
+
+# Specific file or directory
+mysecretfile
+importantfolder/
+
+# Ignore scraped data
+data/
+backup/

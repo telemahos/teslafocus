@@ -1,0 +1,71 @@
+// German
+{
+  "yes": {
+    "message": "Ja",
+    "description": ""
+  },
+  "no": {
+    "message": "Nein",
+    "description": ""
+  },
+  "no_photos": {
+    "message": "Keine Fotos",
+    "description": ""
+  },
+  "not_available": {
+    "message": "N/V",
+    "description": ""
+  },
+  "namechrome": {
+    "message": "Tesla Bestandsinsight",
+    "description": ""
+  },
+  "description": {
+    "message": "Diese Chrome-Erweiterung extrahiert und verarbeitet Fahrzeugdaten von Tesla aus Bestandsseiten und erfasst Fahrzeug-IDs und Details für eine einfachere Analyse. Benutzer können Fahrzeugmetadaten abrufen, anzeigen und speichern, um nahtlosen Zugriff auf Tesla-Bestandsupdates zu gewährleisten. Ideal zur Verfolgung der Verfügbarkeit und Spezifikationen von Autos direkt aus dem Online-Bestand von Tesla.",
+    "description": ""
+  },
+  "titledonatebutton": {
+    "message": "Spenden",
+    "description": ""
+  },
+  "facility": {
+    "message": "Produktionsstätte",
+    "description": ""
+  },
+  "days_in_stock": {
+    "message": "Tage im Bestand",
+    "description": ""
+  },
+  "manufactory_date": {
+    "message": "Herstellungsdatum",
+    "description": ""
+  },
+  "price_variation": {
+    "message": "Preisvariation",
+    "description": ""
+  },
+  "battery_capacity": {
+    "message": "Batteriekapazität",
+    "description": ""
+  },
+  "heatpump": {
+    "message": "Wärmepumpensystem",
+    "description": ""
+  },
+  "vehicle_photos": {
+    "message": "Fahrzeugfotos",
+    "description": ""
+  },
+  "status": {
+    "message": "Daten vorübergehend nicht verfügbar",
+    "description": ""
+  },
+  "retrieving_data": {
+    "message": "Versuche, Daten erneut abzurufen...",
+    "description": ""
+  },
+  "take_a_moment": {
+    "message": "Das kann einen Moment dauern.",
+    "description": ""
+  }
+}

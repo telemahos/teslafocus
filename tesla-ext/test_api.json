@@ -1,0 +1,1440 @@
+
+    {
+        "InTransit": false,
+        "ADL_OPTS": [
+            "AUDIO",
+            "HEATED_SEAT",
+            "FILTER",
+            "AIR_SUS",
+            "TOW_PACKAGE",
+            "INFOTAINMENT_UPGRADE"
+        ],
+        "AUTOPILOT": [
+            "ENHANCED_AUTOPILOT"
+        ],
+        "ActualVesselArrivalDate": null,
+        "AlternateCurrency": [],
+        "BATTERY": [
+            "SEVENTYFIVE"
+        ],
+        "CABIN_CONFIG": [
+            "FIVE"
+        ],
+        "CPORefurbishmentStatus": "Complete",
+        "City": "Schönefeld",
+        "CompositorViews": {
+            "frontView": "STUD_3QTR",
+            "sideView": "STUD_SIDE",
+            "rearView": "STUD_REAR",
+            "interiorView": "STUD_SEAT"
+        },
+        "CountryCode": "DE",
+        "CountryOfOrigin": "DE",
+        "CurrencyCode": "EUR",
+        "CurrencyCodes": "EUR",
+        "DECOR": [
+            "DARK_ASH"
+        ],
+        "DRIVE": [
+            "DRLH"
+        ],
+        "DamageDisclosure": false,
+        "DamageDisclosureGuids": [],
+        "DamageDisclosureStatus": null,
+        "DestinationHandlingFee": 0,
+        "Discount": 0,
+        "DisplayWarranty": false,
+        "ExpectedVesselArrivalDate": null,
+        "FactoryCode": "GF00",
+        "FactoryGatedDate": "2018-11-10T03:40:59.000000",
+        "FederalIncentives": {
+            "IsTaxIncentiveEligible": false,
+            "PriceAfterTaxIncentive": 36200,
+            "TaxIncentiveAmount": 0
+        },
+        "FinplatDetails": [],
+        "FirstRegistrationDate": "2018-12-21T00:00:00",
+        "FixedAssets": false,
+        "FlexibleOptionsData": [
+            {
+                "code": "$APF2",
+                "description": "<ul class=\"single single--full\"><li>Navigieren mit Autopilot-Funktionalität: automatische Fahrt auf Autobahnen von der Ein- bis zur Ausfahrt einschließlich Autobahnkreuzen und Überholen von langsameren Fahrzeugen.</li><li>Einparkautomatik: paralleles und rechtwinkliges Einparken.</li><li>\"Herbeirufen\": Ihr geparktes Auto findet Sie auf Parkplätzen und kommt zu Ihnen. Unglaublich, aber wahr!</li></ul><p><strong>Bis Ende des Jahres:</strong></p><ul class=\"single single--full\"><li>Ampel-/Stoppschilder Erkennung mit Anhalte-/Anfahrautomatik.</li><li>Automatisches Fahren innerorts.</li></ul><p>Die gegenwärtig aktivierten Funktionen verlangen eine aktive Überwachung durch den Fahrer - ein autonomer Betrieb des Fahrzeugs ist damit nicht möglich. Die Aktivierung und Verwendung von Autonomiefunktionen verlangen dagegen den Nachweis über Milliarden von gefahrenen Kilometern, dass ihre Zuverlässigkeit das Vermögen von menschlichen Fahrern weit überschreitet. Zudem sind für den autonomen Betrieb gesetzliche Genehmigungen erforderlich, die je nach Rechtsprechung noch länger dauern dürften. Im Zuge der Weiterentwicklung dieser Selbstfahrfähigkeiten wird Ihr Fahrzeug kontinuierlich über Mobilfunk aktualisiert und aufgewertet.</p>",
+                "group": "AUTOPILOT_FIRMWARE",
+                "long_name": "Volles Potenzial für autonomes Fahren",
+                "name": "Volles Potenzial für autonomes Fahren",
+                "price": 7500
+            },
+            {
+                "code": "$APPB",
+                "description": "<p>Die verbesserte Autopilot-Funktionalität wertet Ihr Tesla-Erlebnis weiter auf. Diese verbesserte Version arbeitet mit vier Kameras statt mit einer. Der Vorteil: erhöhte Präzision, Redundanz und Erkennung von schnell herankommenden Fahrzeugen auf benachbarten Spuren. Ergänzt werden die Kameras durch 12 Ultraschallsensoren, die eine 360°-Rundumüberwachung der Fahrzeugumgebung ermöglichen. Diese Sensoren bieten im Vergleich zur Vorgängerversion fast die doppelte Reichweite. </p> <p> Die wesentlich umfangreicheren Sensorinformationen werden nun von einem Computer verarbeitet, der im Vergleich zum Vorgänger eine mehr als 40-fache Rechenleistung erbringt. Dadurch kann Ihr Tesla ohne Fahrereingriff die Geschwindigkeit an den Verkehr anpassen, die Spur halten oder automatisch wechseln, korrekt durch Autobahnkreuze navigieren und am Ziel von der Autobahn abfahren. Sie können Ihrem Tesla selbst die Parklückensuche und das Einparken überlassen. Und am Morgen fährt Ihr Tesla dann auf \"Zuruf\" sogar von alleine vor. Dennoch gilt, dass die Autopilot-Funktionalität nur ein Fahrerassistenzsystem darstellt. Der Fahrer muss das Fahrzeug zu allen Zeiten überwachen, um im Bedarfsfall sofort eingreifen zu können.</p>\r\n<p>Die verbesserte Tesla Autopilot-Funktionalität wird gegenwärtig implementiert. Sobald die einschlägigen Prüfungen abgeschlossen sind, werden weitere Merkmale und Funktionen hinzugefügt, vorausgesetzt sie werden rechtlich genehmigt.</p>",
+                "group": "AUTOPILOT_PACKAGE",
+                "long_name": "Verbesserte Autopilot-Funktionalität",
+                "name": "Verbesserte Autopilot-Funktionalität",
+                "price": 3800
+            }
+        ],
+        "HEADLINER": [
+            "DARK_HEADLINER"
+        ],
+        "HasDamagePhotos": false,
+        "INTERIOR": [
+            "BLACK_TEXTILE"
+        ],
+        "InspectionDocumentGuid": null,
+        "InventoryPrice": 36200,
+        "IsAtLocation": true,
+        "IsChargingConnectorIncluded": true,
+        "IsDemo": false,
+        "IsLegacy": true,
+        "IsPreProdWithDisclaimer": false,
+        "IsTegra": false,
+        "Language": "de",
+        "Languages": [
+            "de"
+        ],
+        "LexiconDefaultOptions": [
+            {
+                "code": "$CPF0",
+                "description": "Standard-Konnektivität",
+                "group": "CONNECTIVITY",
+                "long_name": "Standard-Konnektivität",
+                "name": "Standard-Konnektivität"
+            },
+            {
+                "code": "$SC04",
+                "description": "Supercharger-Zahlung pro Nutzung",
+                "group": "SUPER_CHARGER",
+                "long_name": "Supercharger-Zahlung pro Nutzung",
+                "name": "Supercharger-Zahlung pro Nutzung"
+            }
+        ],
+        "ListingType": "public",
+        "ListingTypes": "public",
+        "MetroName": "Schönefeld",
+        "Model": "mx",
+        "Odometer": 115778,
+        "OdometerType": "Km",
+        "OptionCodeData": [
+            {
+                "acceleration_unit_long": "km/h",
+                "acceleration_unit_short": "km/h",
+                "acceleration_value": "0-100",
+                "code": "$MT75A",
+                "group": "SPECS_ACCELERATION",
+                "unit_long": "Sekunden",
+                "unit_short": "Sek.",
+                "value": "5.2"
+            },
+            {
+                "code": "$MT75A",
+                "group": "SPECS_TOP_SPEED",
+                "unit_long": "km/h",
+                "unit_short": "km/h",
+                "value": "209"
+            },
+            {
+                "code": "$MT75A",
+                "group": "SPECS_RANGE",
+                "range_source": "WLTP",
+                "range_source_inventory_new": "WLTP",
+                "unit_long": "km",
+                "unit_short": "km",
+                "value": "417"
+            },
+            {
+                "code": "$BP02",
+                "description": "Non-Performance Uncorked Acceleration",
+                "group": "ACCELERATION",
+                "long_name": "Non-Performance Uncorked Acceleration",
+                "name": "Non-Performance Uncorked Acceleration"
+            },
+            {
+                "code": "$AH00",
+                "description": "No Zubehörträger Kupplung",
+                "group": "ACCESSORY_HITCH",
+                "long_name": "No Zubehörträger Kupplung",
+                "name": "No Zubehörträger Kupplung"
+            },
+            {
+                "code": "$AD15",
+                "description": "J1772",
+                "group": "ADAPTER",
+                "long_name": "J1772",
+                "name": "J1772"
+            },
+            {
+                "code": "$GLTL",
+                "description": "GLTL",
+                "group": "ASSEMBLE",
+                "long_name": "GLTL",
+                "name": "GLTL"
+            },
+            {
+                "code": "$AU01",
+                "description": "<p>Verwandeln Sie den Innenraum in einen virtuellen Konzertsaal. Dieses Upgrade bietet eine höhere Verstärkerleistung und weist einen Subwoofer sowie 16 präzise positionierte Lautsprecher auf, um den Sound gehörgerecht am Sitzplatz zu servieren. Dieses Custom-System ist auf höchste audiophile Ansprüche ausgelegt und nutzt den geräumigen Innenraum optimal. Ein weiterer Vorteil: Auspuff- und Motorengeräusche müssen nicht übertüncht werden. Daher können Sie sich auf einen Hörgenuss freuen, der bei Automobilen seinesgleichen sucht. Selbst wesentlich teurere Audiodecks spielen hier im Direktvergleich nur noch in der zweiten Liga.</p> <ul class='single'> <li>17 Lautsprecher mit Neodym-Magneten</li></ul>",
+                "group": "AUDIO",
+                "long_name": "Ultra High Fidelity Sound",
+                "name": "Ultra High Fidelity Sound"
+            },
+            {
+                "code": "$X042",
+                "description": "Auto presenting door",
+                "group": "AUTO_DOORS",
+                "long_name": "Auto presenting door",
+                "name": "Auto presenting door"
+            },
+            {
+                "code": "$APF1",
+                "description": "Autopilot Firmware 2.0 Enhanced",
+                "group": "AUTOPILOT_FIRMWARE",
+                "long_name": "Verbesserte Autopilot-Funktionalität",
+                "name": "Verbesserte Autopilot-Funktionalität"
+            },
+            {
+                "code": "$APH3",
+                "description": "APH3",
+                "group": "AUTOPILOT_HARDWARE",
+                "long_name": "APH3",
+                "name": "APH3"
+            },
+            {
+                "code": "$APPB",
+                "description": "<p>Die verbesserte Autopilot-Funktionalität wertet Ihr Tesla-Erlebnis weiter auf. Diese verbesserte Version arbeitet mit vier Kameras statt mit einer. Der Vorteil: erhöhte Präzision, Redundanz und Erkennung von schnell herankommenden Fahrzeugen auf benachbarten Spuren. Ergänzt werden die Kameras durch 12 Ultraschallsensoren, die eine 360°-Rundumüberwachung der Fahrzeugumgebung ermöglichen. Diese Sensoren bieten im Vergleich zur Vorgängerversion fast die doppelte Reichweite. </p> <p> Die wesentlich umfangreicheren Sensorinformationen werden nun von einem Computer verarbeitet, der im Vergleich zum Vorgänger eine mehr als 40-fache Rechenleistung erbringt. Dadurch kann Ihr Tesla ohne Fahrereingriff die Geschwindigkeit an den Verkehr anpassen, die Spur halten oder automatisch wechseln, korrekt durch Autobahnkreuze navigieren und am Ziel von der Autobahn abfahren. Sie können Ihrem Tesla selbst die Parklückensuche und das Einparken überlassen. Und am Morgen fährt Ihr Tesla dann auf \"Zuruf\" sogar von alleine vor. Dennoch gilt, dass die Autopilot-Funktionalität nur ein Fahrerassistenzsystem darstellt. Der Fahrer muss das Fahrzeug zu allen Zeiten überwachen, um im Bedarfsfall sofort eingreifen zu können.</p>\r\n<p>Die verbesserte Tesla Autopilot-Funktionalität wird gegenwärtig implementiert. Sobald die einschlägigen Prüfungen abgeschlossen sind, werden weitere Merkmale und Funktionen hinzugefügt, vorausgesetzt sie werden rechtlich genehmigt.</p>",
+                "group": "AUTOPILOT_PACKAGE",
+                "long_name": "Verbesserte Autopilot-Funktionalität",
+                "name": "Verbesserte Autopilot-Funktionalität",
+                "price": 3800
+            },
+            {
+                "code": "$X028",
+                "description": "Battery Badge",
+                "group": "BADGE",
+                "long_name": "Battery Badge",
+                "name": "Battery Badge"
+            },
+            {
+                "code": "$BTX5",
+                "description": "<p>417 km <span>NEFZ Reichweite</span></p>",
+                "group": "BATTERY",
+                "long_name": "Model X 75D",
+                "name": "75 kWh Batterie"
+            },
+            {
+                "code": "$BS00",
+                "description": "General Production Flag",
+                "group": "BLIND_SPOT",
+                "long_name": "General Production Flag",
+                "name": "General Production Flag"
+            },
+            {
+                "code": "$CC01",
+                "description": "Komfortable Sitze in zwei Reihen für fünf Erwachsene. Bei Nichtgebrauch lässt sich die zwei Sitzreihe flach umklappen, um den Laderaum zu vergrößern.",
+                "group": "CABIN_CONFIG",
+                "long_name": "Fünfsitzer-Innenraum",
+                "name": "Fünfsitzer-Innenraum"
+            },
+            {
+                "code": "$BCMB",
+                "description": "Black Brake Calipers",
+                "group": "CALIPER",
+                "long_name": "Schwarzer Bremssättel",
+                "name": "Schwarzer Bremssättel"
+            },
+            {
+                "code": "$CH04",
+                "description": "The High Amperage Charger equips Model X with a 72 amp onboard charger, increasing recharge speeds up to 46 miles per hour when used with a Wall Connector on an appropriate circuit. Recommended for high mileage drivers and those who regularly travel off the beaten path.",
+                "group": "CHARGER",
+                "long_name": "High Amperage Charger",
+                "name": "High Amperage Charger"
+            },
+            {
+                "code": "$CF00",
+                "description": "Das Hochstrom-Ladegerät stattet das Auto mit einem 16.5kW Onboard-Ladegerät aus. Mit dieser Ausstattung laden Sie bis zu 72Kilometer pro Stunde auf. Voraussetzung ist der Tesla Wall Connector oder eine Typ 2, 24A 3-Phasen Wandladestation. Die Ladegeschwindigkeiten beim Gebrauch des CHAdeMO Adapters oder der Tesla Supercharger werden nicht beeinträchtigt. ",
+                "group": "CHARGER_FIRMWARE",
+                "long_name": "Hochstrom-Bordladegerät",
+                "name": "Hochstrom-Bordladegerät"
+            },
+            {
+                "code": "$CW02",
+                "description": "<p>Erhöhen Sie durch folgende Extras bei kühlem Wetter den Komfort:</p><ul class='single'><li>Sitzheizung auf allen Sitzen</li><li>Beheiztes Lenkrad</li><li>Scheibenwischer-Enteiser</li></ul>",
+                "group": "COLD_WEATHER",
+                "long_name": "Kaltwetter-Paket",
+                "name": "Kaltwetter-Paket"
+            },
+            {
+                "code": "$CODE",
+                "description": "COUNTRY DE",
+                "group": "COUNTRY",
+                "long_name": "COUNTRY DE",
+                "name": "COUNTRY DE"
+            },
+            {
+                "code": "$X039",
+                "description": "DAB Radio",
+                "group": "DAB_RADIO",
+                "long_name": "DAB Radio",
+                "name": "DAB Radio"
+            },
+            {
+                "code": "$IDBA",
+                "description": "Dekor Eschenholz dunkel",
+                "group": "DECOR",
+                "long_name": "Eschenholz-Dekorelemente Dunkel",
+                "name": "Eschenholz-Dekorelemente Dunkel"
+            },
+            {
+                "code": "$X026",
+                "description": "Lighted Door Handles",
+                "group": "DOOR_HANDLE",
+                "long_name": "Lighted Door Handles",
+                "name": "Lighted Door Handles"
+            },
+            {
+                "code": "$DRLH",
+                "description": "Left Hand Drive",
+                "group": "DRIVE_SIDE",
+                "long_name": "Left Hand Drive",
+                "name": "Left Hand Drive"
+            },
+            {
+                "code": "$DU00",
+                "description": "Drive Unit - IR",
+                "group": "DRIVE_UNIT",
+                "long_name": "Drive Unit - IR",
+                "name": "Drive Unit - IR"
+            },
+            {
+                "code": "$AF02",
+                "description": "Protect occupants with the medical grade HEPA filter, the largest filter of its kind in any production vehicle. It keeps pollen, bacteria, viruses and pollution from entering the cabin. There are three modes: circulate with outside air, re-circulate inside air and biohazard defense mode that creates positive pressure inside the cabin.",
+                "group": "FILTER",
+                "long_name": "HEPA-Luftreinigungsfilter",
+                "name": "HEPA-Luftreinigungsfilter"
+            },
+            {
+                "code": "$FMP6",
+                "description": "FMP6",
+                "group": "FIRMWARE_PERFORMANCE",
+                "long_name": "FMP6",
+                "name": "FMP6"
+            },
+            {
+                "code": "$FG02",
+                "description": "Cut through fog and illuminate obstacles on dark roads with LED fog lights that are controlled through the touchscreen. Our newly redesigned fog lights are designed to work with our LED cornering lights and headlights as a complete system.",
+                "group": "FOG_LAMP",
+                "long_name": "Exterior Lighting Package",
+                "name": "Exterior Lighting Package"
+            },
+            {
+                "code": "$FR01",
+                "description": "Base Front Row",
+                "group": "FRONT_ROW_SEAT",
+                "long_name": "Base Front Row",
+                "name": "Base Front Row"
+            },
+            {
+                "code": "$X007",
+                "description": "Daytime running lights",
+                "group": "HEAD_LAMP",
+                "long_name": "Daytime running lights",
+                "name": "Daytime running lights"
+            },
+            {
+                "code": "$X011",
+                "description": "Override: Homelink",
+                "group": "HOMELINK",
+                "long_name": "GPS-gestützte Homelink-Funktion",
+                "name": "GPS-gestützte Homelink-Funktion"
+            },
+            {
+                "code": "$INBTB",
+                "description": "Bei P100D-Modellen nicht erhältlich",
+                "group": "INTERIOR_BUNDLE",
+                "long_name": "Innenraum mit schwarzem Stoffbezug",
+                "name": "Innenraum mit schwarzem Stoffbezug"
+            },
+            {
+                "code": "$PI01",
+                "description": "<div class='columns col2'> <div class='col1'> <ul><li>Medizinischer HEPA-Luftreinigungsfilter verhindert Eindringen von Viren und Bakterien in Innenraum.<br />Einschließlich Bioweapon-Schutzmodus</li> <li>Unterbindet mithilfe von zwei Aktivkohle-Luftreinigungsfiltern eine Kontaminierung der Innenraumluft durch Gerüche, Stickoxide und Kohlenwasserstoffe aus Abgasen.</li> </ul> </div> <div class='col2 morebuffer'> <ul><li>Automatische Vordertüren</li><li>Premium-Audiosystem - speziell auf den ultraleisen Tesla-Innenraum ausgelegt</li><li>Kaltwetter-Paket mit Sitzheizungen an allen Plätzen, beheiztem Lenkrad, Scheibenwischer-Enteisern und beheizten Waschdüsen</li></ul> </div> </div>",
+                "group": "INTERIOR_PACKAGE",
+                "long_name": "Premium-Upgradepaket",
+                "name": "Premium-Upgradepaket"
+            },
+            {
+                "code": "$IX00",
+                "description": "No Extended Nappa Leather Trim",
+                "group": "LEATHER",
+                "long_name": "No Extended Nappa Leather Trim",
+                "name": "White"
+            },
+            {
+                "code": "$X001",
+                "description": "Override: Power Liftgate",
+                "group": "LIFTGATE",
+                "long_name": "Elektrische Heckklappe",
+                "name": "Elektrische Heckklappe"
+            },
+            {
+                "code": "$LP01",
+                "description": "Add ambiance to Model X with strategically placed LED lights that illuminate without reflecting off the windshield. Interior lighting includes: <ul><li>Door-panel ambient lights</li><li>Second-row footwell lights</li><li>Second-row puddle lights</li></ul>",
+                "group": "LIGHTING_PACKAGE",
+                "long_name": "Premium Interior Lighting",
+                "name": "Premium Interior Lighting"
+            },
+            {
+                "code": "$LT1B",
+                "description": "Black Base Lower Trim",
+                "group": "LOWER_TRIM",
+                "long_name": "Black Base Lower Trim",
+                "name": "Black Base Lower Trim"
+            },
+            {
+                "code": "$MI03",
+                "description": "MI03",
+                "group": "MFG_INTRO",
+                "long_name": "MI03",
+                "name": "MI03"
+            },
+            {
+                "code": "$X037",
+                "description": "Powerfolding Mirrors",
+                "group": "MIRROR",
+                "long_name": "Powerfolding Mirrors",
+                "name": "Powerfolding Mirrors"
+            },
+            {
+                "code": "$MDLX",
+                "description": "Model X",
+                "group": "MODEL",
+                "long_name": "Model X",
+                "name": "Model X",
+                "price": 77990
+            },
+            {
+                "code": "$DV4W",
+                "description": "Allradantrieb",
+                "group": "MOTOR",
+                "long_name": "Allradantrieb",
+                "name": "Allradantrieb"
+            },
+            {
+                "code": "$X025",
+                "description": "No Performance Package",
+                "group": "MOTOR_TYPE",
+                "long_name": "No Performance Package",
+                "name": "No Performance Package"
+            },
+            {
+                "code": "$X003",
+                "description": "Maps & Navigation",
+                "group": "NAVIGATION",
+                "long_name": "Maps & Navigation",
+                "name": "Maps & Navigation"
+            },
+            {
+                "code": "$PBSB",
+                "description": "Solid Black",
+                "group": "PAINT",
+                "long_name": "Solid Black Lackierung",
+                "name": "Solid Black",
+                "price": 1600
+            },
+            {
+                "code": "$PK00",
+                "description": "LEGACY No Parking Sensors",
+                "group": "PARK_ASSIST",
+                "long_name": "LEGACY No Parking Sensors",
+                "name": "LEGACY No Parking Sensors"
+            },
+            {
+                "code": "$X031",
+                "description": "Keyless Entry",
+                "group": "PASSIVE_ENTRY",
+                "long_name": "Schlüsselloser Zugang",
+                "name": "Schlüsselloser Zugang"
+            },
+            {
+                "code": "$PF00",
+                "description": "No Performance Legacy Package",
+                "group": "PERFORMANCE",
+                "long_name": "No Performance Legacy Package",
+                "name": "No Performance Legacy Package"
+            },
+            {
+                "code": "$X043",
+                "description": "No Phone connector",
+                "group": "PHONE_CONNECTOR",
+                "long_name": "No Phone connector",
+                "name": "No Phone connector"
+            },
+            {
+                "code": "$TM00",
+                "description": "General Production Trim",
+                "group": "PRODUCTION_TRIM",
+                "long_name": "General Production Trim",
+                "name": "General Production Trim"
+            },
+            {
+                "code": "$BR04",
+                "description": "$BR04",
+                "group": "RANGE",
+                "long_name": "$BR04",
+                "name": "$BR04"
+            },
+            {
+                "code": "$RCX0",
+                "description": "No Rear Console",
+                "group": "REAR_CONSOLE",
+                "long_name": "No Rear Console",
+                "name": "No Rear Console"
+            },
+            {
+                "code": "$REEU",
+                "description": "$REEU",
+                "group": "REGION",
+                "long_name": "$REEU",
+                "name": "$REEU"
+            },
+            {
+                "code": "$RFPX",
+                "description": "Model X Roof",
+                "group": "ROOF",
+                "long_name": "Model X Roof",
+                "name": "Model X Roof"
+            },
+            {
+                "code": "$OSSB",
+                "description": "US safety kit - black",
+                "group": "SAFETY_KIT",
+                "long_name": "US safety kit - black",
+                "name": "US safety kit - black"
+            },
+            {
+                "code": "$X014",
+                "description": "Override: No Satellite Radio",
+                "group": "SATELLITE",
+                "long_name": "Override: No Satellite Radio",
+                "name": "Override: No Satellite Radio"
+            },
+            {
+                "code": "$S01B",
+                "description": "Black Textile Seats",
+                "group": "SEAT",
+                "long_name": "Black Textile Seats",
+                "name": "Black Textile Seats"
+            },
+            {
+                "code": "$ME02",
+                "description": "Memory Seats",
+                "group": "SEAT_MEMORY",
+                "long_name": "Memory Seats",
+                "name": "Memory Seats"
+            },
+            {
+                "code": "$QPBT",
+                "description": "Schwarz Standard schwarz",
+                "group": "SEAT_PACKAGE",
+                "long_name": "Innenraum mit schwarzem Stoffbezug",
+                "name": "Innenraum mit schwarzem Stoffbezug"
+            },
+            {
+                "code": "$SR05",
+                "description": "Open seating for five with two adults in the second row",
+                "group": "SECOND_ROW_SEAT",
+                "long_name": "Five Seat Interior",
+                "name": "Five Seat Interior"
+            },
+            {
+                "code": "$SP01",
+                "description": "Security Package",
+                "group": "SECURITY",
+                "long_name": "Security Package",
+                "name": "Security Package"
+            },
+            {
+                "code": "$X021",
+                "description": "No Active Spoiler",
+                "group": "SPOILER",
+                "long_name": "No Active Spoiler",
+                "name": "No Spoiler"
+            },
+            {
+                "code": "$SC04",
+                "description": "Supercharger-Zahlung pro Nutzung",
+                "group": "SUPER_CHARGER",
+                "long_name": "Supercharger-Zahlung pro Nutzung",
+                "name": "Supercharger-Zahlung pro Nutzung"
+            },
+            {
+                "code": "$SU01",
+                "description": "Erleben Sie überragende Bedienungsfreundlichkeit, Effizienz und Fahrkomfort. Zur Höheneinstellung der Smart Air-Luftfederung Ihres Model X kommt auch das GPS Ihres Fahrzeugs zum Einsatz, um die Örtlichkeit der letzten Höhenverstellung zu bestimmen und die Aufhängungshöhe beim erneuten Befahren von spezifischen Strecken, z.B. Steigungen, automatisch anzupassen.",
+                "group": "SUSPENSION",
+                "long_name": "Luftfederung „Smart Air Suspension“",
+                "name": "Luftfederung „Smart Air Suspension“"
+            },
+            {
+                "code": "$TRA0",
+                "description": "No Third Row HVAC ~ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla ac neque vel bibendum. Morbi ut ante turpis. Quisque consequat, sapien laoreet viverra porttitor, est enim tincidunt tellus, nec pellentesque dui sapien quis turpis. In dignissim magna eget mi euismod elementum.",
+                "group": "THIRD_ROW_HVAC",
+                "long_name": "No Third Row HVAC",
+                "name": "No Third Row HVAC"
+            },
+            {
+                "code": "$TR00",
+                "description": "No Third Row Seat",
+                "group": "THIRD_ROW_SEAT",
+                "long_name": "No Third Row Seat",
+                "name": "No Third Row Seat"
+            },
+            {
+                "code": "$TIM7",
+                "description": "20 Inch Summer Tires (Michelin)",
+                "group": "TIRE",
+                "long_name": "Summer Tires",
+                "name": "Summer Tires"
+            },
+            {
+                "code": "$DSHG",
+                "description": "PUR Dash Pad",
+                "group": "TOP_PAD",
+                "long_name": "PUR Dash Pad",
+                "name": "PUR Dash Pad"
+            },
+            {
+                "code": "$TW01",
+                "description": "<p>Mit der Anhängerkupplung aus hochfestem Stahl verwandeln Sie Ihr Model X in ein Zugpferd: bei 20-Zoll-Felgen sind 2.250 kg Anhängelast, bei 22-Zoll-Felgen immerhin 1.580 kg geboten.</p><ul class='single'> <li>13-polige Anhängersteckdose</li> <li>Anhängerbetrieb-Softwarepaket</li> <li>Kompatibel mit auf Anhängerkupplungen zu montierenden Fahrrad- und Skiträgern</li></ul>",
+                "group": "TOW_PACKAGE",
+                "long_name": "Anhängerkupplung",
+                "name": "Anhängerkupplung"
+            },
+            {
+                "code": "$MT75A",
+                "description": "$MT75A",
+                "group": "TRIM",
+                "long_name": "75D",
+                "name": "75D"
+            },
+            {
+                "code": "$UTPB",
+                "description": "Dunkler Dachhimmel",
+                "group": "UPPER_TRIM",
+                "long_name": "Dunkler Dachhimmel",
+                "name": "Dunkler Dachhimmel"
+            },
+            {
+                "code": "$WT20",
+                "description": "20-Zoll-Felgen Slipstream Silber",
+                "group": "WHEELS",
+                "long_name": "20-Zoll-Felgen Slipstream Silber",
+                "name": "20-Zoll-Felgen Slipstream Silber"
+            },
+            {
+                "code": "$YFCC",
+                "description": "YFCC",
+                "group": "YATCH_FLOOR",
+                "long_name": "YFCC",
+                "name": "YFCC"
+            },
+            {
+                "code": "$CPF0",
+                "description": "Standard-Konnektivität",
+                "group": "CONNECTIVITY",
+                "long_name": "Standard-Konnektivität",
+                "name": "Standard-Konnektivität"
+            }
+        ],
+        "OptionCodeList": "$BP02,$AH00,$AD15,$GLTL,$AU01,$X042,$APF1,$APH3,$APPB,$X028,$BTX5,$BS00,$CC01,$BCMB,$CH04,$CF00,$CW02,$CODE,$X039,$IDBA,$X026,$DRLH,$DU00,$AF02,$FMP6,$FG02,$FR01,$X007,$X011,$INBTB,$PI01,$IX00,$X001,$LP01,$LT1B,$MI03,$X037,$MDLX,$DV4W,$X025,$X003,$PBSB,$PK00,$X031,$PF00,$X043,$TM00,$BR04,$RCX0,$REEU,$RFPX,$OSSB,$X014,$S01B,$ME02,$QPBT,$SR05,$SP01,$X021,$SC04,$SU01,$TRA0,$TR00,$TIM7,$DSHG,$TW01,$MT75A,$UTPB,$WT20,$YFCC,$CPF0",
+        "OptionCodeListDisplayOnly": "$X042,$CW02,$TRA0,$CH04,$FMP6,$X037,$SR05,$TW01,$X003,$OSSB,$X028,$DRLH,$X014,$ME02,$MDLX,$PBSB,$BR04,$FG02,$TM00,$S01B,$REEU,$RFPX,$AU01,$AF02,$FR01,$INBTB,$PI01,$X043,$TIM7,$UTPB,$AD15,$X031,$BP02,$APH3,$CPF0,$APPB,$BTX5,$LP01,$APF1,$CF00,$IDBA,$SP01,$SU01,$X039,$WT20,$MI03,$QPBT,$LT1B,$DV4W,$DSHG,$GLTL,$X011,$X001,$MT75A,$CC01,$CODE,$X007",
+        "OptionCodePricing": [
+            {
+                "code": "$BP02",
+                "group": "ACCELERATION",
+                "price": 0
+            },
+            {
+                "code": "$AH00",
+                "group": "ACCESSORY_HITCH",
+                "price": 0
+            },
+            {
+                "code": "$AD15",
+                "group": "ADAPTER",
+                "price": 0
+            },
+            {
+                "code": "$GLTL",
+                "group": "ASSEMBLE",
+                "price": 0
+            },
+            {
+                "code": "$AU01",
+                "group": "AUDIO",
+                "price": 0
+            },
+            {
+                "code": "$X042",
+                "group": "AUTO_DOORS",
+                "price": 0
+            },
+            {
+                "code": "$APF1",
+                "group": "AUTOPILOT_FIRMWARE",
+                "price": 0
+            },
+            {
+                "code": "$APH3",
+                "group": "AUTOPILOT_HARDWARE",
+                "price": 0
+            },
+            {
+                "code": "$APPB",
+                "group": "AUTOPILOT_PACKAGE",
+                "price": 3800
+            },
+            {
+                "code": "$X028",
+                "group": "BADGE",
+                "price": 0
+            },
+            {
+                "code": "$BTX5",
+                "group": "BATTERY",
+                "price": 0
+            },
+            {
+                "code": "$BS00",
+                "group": "BLIND_SPOT",
+                "price": 0
+            },
+            {
+                "code": "$CC01",
+                "group": "CABIN_CONFIG",
+                "price": 0
+            },
+            {
+                "code": "$BCMB",
+                "group": "CALIPER",
+                "price": 0
+            },
+            {
+                "code": "$CH04",
+                "group": "CHARGER",
+                "price": 0
+            },
+            {
+                "code": "$CF00",
+                "group": "CHARGER_FIRMWARE",
+                "price": 0
+            },
+            {
+                "code": "$CW02",
+                "group": "COLD_WEATHER",
+                "price": 0
+            },
+            {
+                "code": "$CODE",
+                "group": "COUNTRY",
+                "price": 0
+            },
+            {
+                "code": "$X039",
+                "group": "DAB_RADIO",
+                "price": 0
+            },
+            {
+                "code": "$IDBA",
+                "group": "DECOR",
+                "price": 0
+            },
+            {
+                "code": "$X026",
+                "group": "DOOR_HANDLE",
+                "price": 0
+            },
+            {
+                "code": "$DRLH",
+                "group": "DRIVE_SIDE",
+                "price": 0
+            },
+            {
+                "code": "$DU00",
+                "group": "DRIVE_UNIT",
+                "price": 0
+            },
+            {
+                "code": "$AF02",
+                "group": "FILTER",
+                "price": 0
+            },
+            {
+                "code": "$FMP6",
+                "group": "FIRMWARE_PERFORMANCE",
+                "price": 0
+            },
+            {
+                "code": "$FG02",
+                "group": "FOG_LAMP",
+                "price": 0
+            },
+            {
+                "code": "$FR01",
+                "group": "FRONT_ROW_SEAT",
+                "price": 0
+            },
+            {
+                "code": "$X007",
+                "group": "HEAD_LAMP",
+                "price": 0
+            },
+            {
+                "code": "$X011",
+                "group": "HOMELINK",
+                "price": 0
+            },
+            {
+                "code": "$INBTB",
+                "group": "INTERIOR_BUNDLE",
+                "price": 0
+            },
+            {
+                "code": "$PI01",
+                "group": "INTERIOR_PACKAGE",
+                "price": 0
+            },
+            {
+                "code": "$IX00",
+                "group": "LEATHER",
+                "price": 0
+            },
+            {
+                "code": "$X001",
+                "group": "LIFTGATE",
+                "price": 0
+            },
+            {
+                "code": "$LP01",
+                "group": "LIGHTING_PACKAGE",
+                "price": 0
+            },
+            {
+                "code": "$LT1B",
+                "group": "LOWER_TRIM",
+                "price": 0
+            },
+            {
+                "code": "$MI03",
+                "group": "MFG_INTRO",
+                "price": 0
+            },
+            {
+                "code": "$X037",
+                "group": "MIRROR",
+                "price": 0
+            },
+            {
+                "code": "$MDLX",
+                "group": "MODEL",
+                "price": 77990
+            },
+            {
+                "code": "$DV4W",
+                "group": "MOTOR",
+                "price": 0
+            },
+            {
+                "code": "$X025",
+                "group": "MOTOR_TYPE",
+                "price": 0
+            },
+            {
+                "code": "$X003",
+                "group": "NAVIGATION",
+                "price": 0
+            },
+            {
+                "code": "$PBSB",
+                "group": "PAINT",
+                "price": 1700
+            },
+            {
+                "code": "$PK00",
+                "group": "PARK_ASSIST",
+                "price": 0
+            },
+            {
+                "code": "$X031",
+                "group": "PASSIVE_ENTRY",
+                "price": 0
+            },
+            {
+                "code": "$PF00",
+                "group": "PERFORMANCE",
+                "price": 0
+            },
+            {
+                "code": "$X043",
+                "group": "PHONE_CONNECTOR",
+                "price": 0
+            },
+            {
+                "code": "$TM00",
+                "group": "PRODUCTION_TRIM",
+                "price": 0
+            },
+            {
+                "code": "$BR04",
+                "group": "RANGE",
+                "price": 0
+            },
+            {
+                "code": "$RCX0",
+                "group": "REAR_CONSOLE",
+                "price": 0
+            },
+            {
+                "code": "$REEU",
+                "group": "REGION",
+                "price": 0
+            },
+            {
+                "code": "$RFPX",
+                "group": "ROOF",
+                "price": 0
+            },
+            {
+                "code": "$OSSB",
+                "group": "SAFETY_KIT",
+                "price": 0
+            },
+            {
+                "code": "$X014",
+                "group": "SATELLITE",
+                "price": 0
+            },
+            {
+                "code": "$S01B",
+                "group": "SEAT",
+                "price": 0
+            },
+            {
+                "code": "$ME02",
+                "group": "SEAT_MEMORY",
+                "price": 0
+            },
+            {
+                "code": "$QPBT",
+                "group": "SEAT_PACKAGE",
+                "price": 0
+            },
+            {
+                "code": "$SR05",
+                "group": "SECOND_ROW_SEAT",
+                "price": 0
+            },
+            {
+                "code": "$SP01",
+                "group": "SECURITY",
+                "price": 0
+            },
+            {
+                "code": "$X021",
+                "group": "SPOILER",
+                "price": 0
+            },
+            {
+                "code": "$SC04",
+                "group": "SUPER_CHARGER",
+                "price": 0
+            },
+            {
+                "code": "$SU01",
+                "group": "SUSPENSION",
+                "price": 0
+            },
+            {
+                "code": "$TRA0",
+                "group": "THIRD_ROW_HVAC",
+                "price": 0
+            },
+            {
+                "code": "$TR00",
+                "group": "THIRD_ROW_SEAT",
+                "price": 0
+            },
+            {
+                "code": "$TIM7",
+                "group": "TIRE",
+                "price": 0
+            },
+            {
+                "code": "$DSHG",
+                "group": "TOP_PAD",
+                "price": 0
+            },
+            {
+                "code": "$TW01",
+                "group": "TOW_PACKAGE",
+                "price": 0
+            },
+            {
+                "code": "$MT75A",
+                "group": "TRIM",
+                "price": 0
+            },
+            {
+                "code": "$UTPB",
+                "group": "UPPER_TRIM",
+                "price": 0
+            },
+            {
+                "code": "$WT20",
+                "group": "WHEEL",
+                "price": 0
+            },
+            {
+                "code": "$YFCC",
+                "group": "YATCH_FLOOR",
+                "price": 0
+            },
+            {
+                "code": "$CPF0",
+                "group": "CONNECTIVITY",
+                "price": 0
+            }
+        ],
+        "OrderFee": {
+            "type": "order_fee",
+            "value": 0
+        },
+        "OriginalDeliveryDate": "2018-12-22T00:00:00",
+        "OriginalInCustomerGarageDate": "2018-12-22T00:00:00",
+        "PAINT": [
+            "BLACK"
+        ],
+        "Price": 36200,
+        "PurchasePrice": 36200,
+        "ROOF": null,
+        "RegistrationDetails": {
+            "Country": "DE",
+            "firstRegistered": "2018-12-21T00:00:00"
+        },
+        "STEERING_WHEEL": [
+            "STEERING_ROUND"
+        ],
+        "SalesMetro": "Berlin",
+        "StateProvince": null,
+        "StateProvinceLongName": null,
+        "TRIM": [
+            "75D"
+        ],
+        "TaxScheme": "VAT",
+        "ThirdPartyHistoryUrl": null,
+        "TitleStatus": "USED",
+        "TitleSubtype": [
+            "FIRSTREG"
+        ],
+        "TotalPrice": 36200,
+        "TradeInType": "VAT",
+        "TransportFees": {
+            "exemptVRL": [],
+            "fees": [],
+            "metro_fees": [],
+            "trt_to_trt_fees": []
+        },
+        "TrimCode": "$MT75A",
+        "TrimName": "75D",
+        "Trt": 16302,
+        "VIN": "5YJXCCE21JF133483",
+        "VehicleHistory": "CLEAN",
+        "VehiclePhotos": [
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/93e33383-f095-4620-be87-7ed9a1c15a7b",
+                "photoType": null,
+                "pictureType": "Front Full View",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/8a9bf256-173e-4c1f-ac40-395d572f68bc",
+                "photoType": null,
+                "pictureType": "Full View of Driver Side Rear Corner",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/ae5b7644-92d6-40b7-9f56-72da8704984c",
+                "photoType": null,
+                "pictureType": "Rear Full View",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/681fb34a-eb52-491e-b0fa-0c5eb9e3bee7",
+                "photoType": null,
+                "pictureType": "Front Interior View From Driver Side",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/46e1b199-4c74-4436-959f-3e768de78c62",
+                "photoType": null,
+                "pictureType": "SRP",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/fd9be1a1-1765-4f32-8f6e-1446995be436",
+                "photoType": null,
+                "pictureType": "App Store - Netflix, etc",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/e039cacf-cc52-4533-a547-3dd466fb2a84",
+                "photoType": null,
+                "pictureType": "Heated Seats & Steering Wheel From Rear Centre",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/946b953e-277b-4395-911c-895ed00a65c0",
+                "photoType": null,
+                "pictureType": "Parking Assistance View From Rear Centre",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/fcd9677d-9006-4dad-b28d-8b7eeb2f92bd",
+                "photoType": null,
+                "pictureType": "Front Interior From Rear Centre",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/8fe51f6b-1456-4366-b6cb-7f1b098fa0d4",
+                "photoType": null,
+                "pictureType": "3rd Row Seats",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/202ffaf6-6efa-499d-93f9-553da4d96be9",
+                "photoType": null,
+                "pictureType": "Rear Centre Console AC/Screen",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/1266f706-e3d8-43a1-b9f0-f0472544ac90",
+                "photoType": null,
+                "pictureType": "Front Seats View from Driver Side",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/4780b850-f2a0-497e-98c0-78cd89073c09",
+                "photoType": null,
+                "pictureType": "Panoramic Glass Roof From Driver Side",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/264a81fc-4af8-48be-a5ee-cd86b14acb25",
+                "photoType": null,
+                "pictureType": "Trunk (Seats Up)",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/f960fd3b-8cce-4700-86ad-58747bba7a5d",
+                "photoType": null,
+                "pictureType": "Trunk (Seats Down)",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/f6ce9338-2edf-4f7f-87d3-ea1d3189883a",
+                "photoType": null,
+                "pictureType": "Frunk",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/b3890b1d-2447-414a-a544-6a8bb091f986",
+                "photoType": null,
+                "pictureType": "Driver Side Front Wheel & Tyre",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/fe17eb9e-73b5-4b70-b64c-ccbe33f9efef",
+                "photoType": null,
+                "pictureType": "Full Driver Side View",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/23e610ba-22fd-4256-9009-b149b27416f8",
+                "photoType": null,
+                "pictureType": "Rear Seats View From Driver Side",
+                "width": 0
+            },
+            {
+                "height": 0,
+                "imageUrl": "https://mytcore-inventory-assests.tesla.com/inventory/used/inspection/image/a72c9695-cefb-46e4-ac44-761ef7e0b708",
+                "photoType": null,
+                "pictureType": "Charging Port",
+                "width": 0
+            }
+        ],
+        "VehicleRegion": null,
+        "VehicleSubType": null,
+        "VehicleType": "INVENTORY",
+        "Vrl": 16302,
+        "VrlLocks": [
+            16302
+        ],
+        "VrlName": "Berlin Schönefeld  Delivery Hub",
+        "WHEELS": [
+            "TWENTY"
+        ],
+        "WarrantyBatteryExpDate": "2026-12-22T08:00:00Z",
+        "WarrantyBatteryIsExpired": false,
+        "WarrantyBatteryMile": 0,
+        "WarrantyBatteryYear": 8,
+        "WarrantyData": {
+            "UsedVehicleLimitedWarrantyMile": 20000,
+            "UsedVehicleLimitedWarrantyYear": 1,
+            "WarrantyBatteryExpDate": "2026-12-22T08:00:00Z",
+            "WarrantyBatteryIsExpired": false,
+            "WarrantyBatteryMile": 0,
+            "WarrantyBatteryYear": 8,
+            "WarrantyDriveUnitExpDate": "2026-12-22T08:00:00Z",
+            "WarrantyDriveUnitMile": 0,
+            "WarrantyDriveUnitYear": 8,
+            "WarrantyMile": 80000,
+            "WarrantyVehicleExpDate": "2022-12-22T08:00:00Z",
+            "WarrantyVehicleIsExpired": true,
+            "WarrantyYear": 4
+        },
+        "WarrantyDriveUnitExpDate": "2026-12-22T08:00:00Z",
+        "WarrantyDriveUnitYear": 8,
+        "WarrantyMile": 80000,
+        "WarrantyVehicleExpDate": "2022-12-22T08:00:00Z",
+        "WarrantyVehicleIsExpired": true,
+        "WarrantyYear": 4,
+        "Year": 2018,
+        "UsedVehicleLimitedWarrantyMile": 20000,
+        "UsedVehicleLimitedWarrantyYear": 1,
+        "WarrantyDriveUnitMile": 0,
+        "OdometerTypeShort": "km",
+        "DeliveryDateDisplay": true,
+        "TransportationFee": 0,
+        "vrlList": [
+            {
+                "vrl": 16302,
+                "lat": 52.376,
+                "lon": 13.541194,
+                "vrlLocks": [
+                    16302
+                ]
+            }
+        ],
+        "OptionCodeSpecs": {
+            "C_SPECS": {
+                "code": "C_SPECS",
+                "name": "Specs",
+                "options": [
+                    {
+                        "code": "SPECS_RANGE",
+                        "name": "417 km",
+                        "long_name": "417 km",
+                        "description": "Reichweite (WLTP)",
+                        "lexiconGroup": "SPECS_RANGE"
+                    },
+                    {
+                        "code": "SPECS_TOP_SPEED",
+                        "name": "209 km/h",
+                        "long_name": "209 km/h",
+                        "description": "Maximale Geschwindigkeit",
+                        "lexiconGroup": "SPECS_TOP_SPEED"
+                    },
+                    {
+                        "code": "SPECS_ACCELERATION",
+                        "name": "5,2 Sek.",
+                        "long_name": "5,2 Sekunden",
+                        "description": "0-100 km/h",
+                        "lexiconGroup": "SPECS_ACCELERATION"
+                    }
+                ]
+            },
+            "C_DESIGN": {
+                "code": "C_DESIGN",
+                "name": "Design",
+                "options": []
+            },
+            "C_CALLOUTS": {
+                "code": "C_CALLOUTS",
+                "name": "Callout Features",
+                "options": [
+                    {
+                        "code": "$APPB",
+                        "name": "Enhanced Autopilot",
+                        "long_name": "",
+                        "description": "<p>Die verbesserte Autopilot-Funktionalität wertet Ihr Tesla-Erlebnis weiter auf. Diese verbesserte Version arbeitet mit vier Kameras statt mit einer. Der Vorteil: erhöhte Präzision, Redundanz und Erkennung von schnell herankommenden Fahrzeugen auf benachbarten Spuren. Ergänzt werden die Kameras durch 12 Ultraschallsensoren, die eine 360°-Rundumüberwachung der Fahrzeugumgebung ermöglichen. Diese Sensoren bieten im Vergleich zur Vorgängerversion fast die doppelte Reichweite. </p> <p> Die wesentlich umfangreicheren Sensorinformationen werden nun von einem Computer verarbeitet, der im Vergleich zum Vorgänger eine mehr als 40-fache Rechenleistung erbringt. Dadurch kann Ihr Tesla ohne Fahrereingriff die Geschwindigkeit an den Verkehr anpassen, die Spur halten oder automatisch wechseln, korrekt durch Autobahnkreuze navigieren und am Ziel von der Autobahn abfahren. Sie können Ihrem Tesla selbst die Parklückensuche und das Einparken überlassen. Und am Morgen fährt Ihr Tesla dann auf \"Zuruf\" sogar von alleine vor. Dennoch gilt, dass die Autopilot-Funktionalität nur ein Fahrerassistenzsystem darstellt. Der Fahrer muss das Fahrzeug zu allen Zeiten überwachen, um im Bedarfsfall sofort eingreifen zu können.</p>\r\n<p>Die verbesserte Tesla Autopilot-Funktionalität wird gegenwärtig implementiert. Sobald die einschlägigen Prüfungen abgeschlossen sind, werden weitere Merkmale und Funktionen hinzugefügt, vorausgesetzt sie werden rechtlich genehmigt.</p>",
+                        "lexiconGroup": "AUTOPILOT_PACKAGE",
+                        "group": "AUTOPILOT_PACKAGE"
+                    },
+                    {
+                        "code": "PCT1M",
+                        "name": "30 Tage Premium-Konnektivität-Testphase",
+                        "description": "30 Tage Premium-Konnektivität-Testphase",
+                        "group": "CONNECTIVITY",
+                        "list": [
+                            "satelliteMaps",
+                            "musicStreaming",
+                            "videoStreaming",
+                            "caraoke",
+                            "internetBrowser"
+                        ],
+                        "period": "30 Tage"
+                    },
+                    {
+                        "code": "firstRegistered",
+                        "description": "Erstzulassung: 21. Dez. 2018",
+                        "group": "REGISTRATION",
+                        "name": "Erstzulassung: 21. Dez. 2018"
+                    }
+                ]
+            },
+            "C_OPTS": {
+                "code": "C_OPTS",
+                "name": "Options",
+                "options": [
+                    {
+                        "code": "$PBSB",
+                        "name": "Solid Black Lackierung",
+                        "long_name": "",
+                        "description": "Solid Black",
+                        "lexiconGroup": "PAINT"
+                    },
+                    {
+                        "code": "$WT20",
+                        "name": "20-Zoll-Felgen Slipstream Silber",
+                        "long_name": "",
+                        "description": "20-Zoll-Felgen Slipstream Silber",
+                        "lexiconGroup": "WHEELS"
+                    },
+                    {
+                        "code": "$QPBT",
+                        "name": "Innenraum mit schwarzem Stoffbezug",
+                        "long_name": "",
+                        "description": "Schwarz Standard schwarz",
+                        "lexiconGroup": "SEAT_PACKAGE"
+                    },
+                    {
+                        "code": "$APPB",
+                        "name": "Enhanced Autopilot",
+                        "long_name": "",
+                        "description": "<p>Die verbesserte Autopilot-Funktionalität wertet Ihr Tesla-Erlebnis weiter auf. Diese verbesserte Version arbeitet mit vier Kameras statt mit einer. Der Vorteil: erhöhte Präzision, Redundanz und Erkennung von schnell herankommenden Fahrzeugen auf benachbarten Spuren. Ergänzt werden die Kameras durch 12 Ultraschallsensoren, die eine 360°-Rundumüberwachung der Fahrzeugumgebung ermöglichen. Diese Sensoren bieten im Vergleich zur Vorgängerversion fast die doppelte Reichweite. </p> <p> Die wesentlich umfangreicheren Sensorinformationen werden nun von einem Computer verarbeitet, der im Vergleich zum Vorgänger eine mehr als 40-fache Rechenleistung erbringt. Dadurch kann Ihr Tesla ohne Fahrereingriff die Geschwindigkeit an den Verkehr anpassen, die Spur halten oder automatisch wechseln, korrekt durch Autobahnkreuze navigieren und am Ziel von der Autobahn abfahren. Sie können Ihrem Tesla selbst die Parklückensuche und das Einparken überlassen. Und am Morgen fährt Ihr Tesla dann auf \"Zuruf\" sogar von alleine vor. Dennoch gilt, dass die Autopilot-Funktionalität nur ein Fahrerassistenzsystem darstellt. Der Fahrer muss das Fahrzeug zu allen Zeiten überwachen, um im Bedarfsfall sofort eingreifen zu können.</p>\r\n<p>Die verbesserte Tesla Autopilot-Funktionalität wird gegenwärtig implementiert. Sobald die einschlägigen Prüfungen abgeschlossen sind, werden weitere Merkmale und Funktionen hinzugefügt, vorausgesetzt sie werden rechtlich genehmigt.</p>",
+                        "lexiconGroup": "AUTOPILOT_PACKAGE"
+                    },
+                    {
+                        "code": "$SU01",
+                        "name": "Luftfederung „Smart Air Suspension“",
+                        "long_name": "",
+                        "description": "Erleben Sie überragende Bedienungsfreundlichkeit, Effizienz und Fahrkomfort. Zur Höheneinstellung der Smart Air-Luftfederung Ihres Model X kommt auch das GPS Ihres Fahrzeugs zum Einsatz, um die Örtlichkeit der letzten Höhenverstellung zu bestimmen und die Aufhängungshöhe beim erneuten Befahren von spezifischen Strecken, z.B. Steigungen, automatisch anzupassen.",
+                        "lexiconGroup": "SUSPENSION"
+                    },
+                    {
+                        "code": "$AU01",
+                        "name": "Ultra High Fidelity Sound",
+                        "long_name": "",
+                        "description": "<p>Verwandeln Sie den Innenraum in einen virtuellen Konzertsaal. Dieses Upgrade bietet eine höhere Verstärkerleistung und weist einen Subwoofer sowie 16 präzise positionierte Lautsprecher auf, um den Sound gehörgerecht am Sitzplatz zu servieren. Dieses Custom-System ist auf höchste audiophile Ansprüche ausgelegt und nutzt den geräumigen Innenraum optimal. Ein weiterer Vorteil: Auspuff- und Motorengeräusche müssen nicht übertüncht werden. Daher können Sie sich auf einen Hörgenuss freuen, der bei Automobilen seinesgleichen sucht. Selbst wesentlich teurere Audiodecks spielen hier im Direktvergleich nur noch in der zweiten Liga.</p> <ul class='single'> <li>17 Lautsprecher mit Neodym-Magneten</li></ul>",
+                        "lexiconGroup": "AUDIO"
+                    },
+                    {
+                        "code": "$AF02",
+                        "name": "HEPA-Luftreinigungsfilter",
+                        "long_name": "",
+                        "description": "Protect occupants with the medical grade HEPA filter, the largest filter of its kind in any production vehicle. It keeps pollen, bacteria, viruses and pollution from entering the cabin. There are three modes: circulate with outside air, re-circulate inside air and biohazard defense mode that creates positive pressure inside the cabin.",
+                        "lexiconGroup": "FILTER"
+                    },
+                    {
+                        "code": "$CW02",
+                        "name": "Kaltwetter-Paket",
+                        "long_name": "",
+                        "description": "<p>Erhöhen Sie durch folgende Extras bei kühlem Wetter den Komfort:</p><ul class='single'><li>Sitzheizung auf allen Sitzen</li><li>Beheiztes Lenkrad</li><li>Scheibenwischer-Enteiser</li></ul>",
+                        "lexiconGroup": "COLD_WEATHER"
+                    },
+                    {
+                        "code": "$TW01",
+                        "name": "Anhängerkupplung",
+                        "long_name": "",
+                        "description": "<p>Mit der Anhängerkupplung aus hochfestem Stahl verwandeln Sie Ihr Model X in ein Zugpferd: bei 20-Zoll-Felgen sind 2.250 kg Anhängelast, bei 22-Zoll-Felgen immerhin 1.580 kg geboten.</p><ul class='single'> <li>13-polige Anhängersteckdose</li> <li>Anhängerbetrieb-Softwarepaket</li> <li>Kompatibel mit auf Anhängerkupplungen zu montierenden Fahrrad- und Skiträgern</li></ul>",
+                        "lexiconGroup": "TOW_PACKAGE"
+                    },
+                    {
+                        "code": "$X031",
+                        "name": "Schlüsselloser Zugang",
+                        "long_name": "",
+                        "description": "Keyless Entry",
+                        "lexiconGroup": "PASSIVE_ENTRY"
+                    },
+                    {
+                        "code": "$X001",
+                        "name": "Elektrische Heckklappe",
+                        "long_name": "",
+                        "description": "Override: Power Liftgate",
+                        "lexiconGroup": "LIFTGATE"
+                    },
+                    {
+                        "code": "$CC01",
+                        "name": "Fünfsitzer-Innenraum",
+                        "long_name": "",
+                        "description": "Komfortable Sitze in zwei Reihen für fünf Erwachsene. Bei Nichtgebrauch lässt sich die zwei Sitzreihe flach umklappen, um den Laderaum zu vergrößern.",
+                        "lexiconGroup": "CABIN_CONFIG"
+                    },
+                    {
+                        "code": "$IDBA",
+                        "name": "Eschenholz-Dekorelemente Dunkel",
+                        "long_name": "",
+                        "description": "Dekor Eschenholz dunkel",
+                        "lexiconGroup": "DECOR"
+                    },
+                    {
+                        "code": "$UTPB",
+                        "name": "Dunkler Dachhimmel",
+                        "long_name": "",
+                        "description": "Dunkler Dachhimmel",
+                        "lexiconGroup": "UPPER_TRIM"
+                    },
+                    {
+                        "code": "TEGRA",
+                        "name": "Infotainment-Upgrade",
+                        "description": "Infotainment-Upgrade",
+                        "long_name": ""
+                    }
+                ]
+            }
+        },
+        "CompositorViewsCustom": {
+            "isProductWithCustomViews": true,
+            "externalZoom": {
+                "order": 1.3,
+                "search": 1.3
+            },
+            "externalCrop": {
+                "order": "1400,850,250,150",
+                "search": "1400,850,300,130"
+            }
+        },
+        "IsRangeStandard": true,
+        "geoPoints": [
+            [
+                "52.376,13.541194",
+                16302
+            ]
+        ],
+        "HasMarketingOptions": true
+    }

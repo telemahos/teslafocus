@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "__MSG_namechrome__",
+    "version": "0.1.55",
+    "description": "__MSG_description__",
+    "permissions": [
+        "webRequest", 
+        "storage", 
+        "tabs",
+        "activeTab", 
+        "scripting"
+    ],
+    "default_locale" : "en",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "https://www.tesla.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.tesla.com/de_DE/inventory/used*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+        "default_title": "Tesla Invetory",
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html"
+
+}

@@ -1,0 +1,71 @@
+// GREEK
+{ 
+  "yes": {
+    "message": "Ναι",
+    "description": ""
+  },
+  "no": {
+    "message": "Όχι",
+    "description": ""
+  },
+  "no_photos": {
+    "message": "Καμία φωτογραφία",
+    "description": ""
+  },
+  "not_available": {
+    "message": "ΜΔ",
+    "description": ""
+  },
+  "namechrome": {
+    "message": "Ενημέρωση Αποθέματος Tesla",
+    "description": ""
+  },
+  "description": {
+    "message": "Αυτή η επέκταση Chrome εξάγει και επεξεργάζεται δεδομένα οχημάτων Tesla από σελίδες αποθέματος, καταγράφοντας ταυτότητες και λεπτομέρειες οχημάτων για ευκολότερη ανάλυση. Οι χρήστες μπορούν να ανακτούν, να προβάλλουν και να αποθηκεύουν μεταδεδομένα οχημάτων, διασφαλίζοντας άμεση πρόσβαση σε ενημερώσεις αποθέματος Tesla. Ιδανικό για παρακολούθηση διαθεσιμότητας αυτοκινήτων και προδιαγραφών απευθείας από το διαδικτυακό απόθεμα της Tesla.",
+    "description": ""
+  },
+  "titledonatebutton": {
+    "message": "Δωρεά",
+    "description": ""
+  },
+  "facility": {
+    "message": "Εγκατάσταση Παραγωγής",
+    "description": ""
+  },
+  "days_in_stock": {
+    "message": "Ημέρες σε Απόθεμα",
+    "description": ""
+  },
+  "manufactory_date": {
+    "message": "Ημερομηνία Κατασκευής",
+    "description": ""
+  },
+  "price_variation": {
+    "message": "Μεταβολή Τιμής",
+    "description": ""
+  },
+  "battery_capacity": {
+    "message": "Χωρητικότητα Μπαταρίας",
+    "description": ""
+  },
+  "heatpump": {
+    "message": "Σύστημα Αντλίας Θερμότητας",
+    "description": ""
+  },
+  "vehicle_photos": {
+    "message": "Φωτογραφίες Οχημάτων",
+    "description": ""
+  },
+  "status": {
+    "message": "Τα δεδομένα είναι προσωρινά μη διαθέσιμα",
+    "description": ""
+  },
+  "retrieving_data": {
+    "message": "Προσπάθεια ανακτήσης δεδομένων...",
+    "description": ""
+  },
+  "take_a_moment": {
+    "message": "Αυτό μπορεί να πάρει λίγο χρόνο.",
+    "description": ""
+  }
+}

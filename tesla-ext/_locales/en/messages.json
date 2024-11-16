@@ -1,0 +1,71 @@
+// ENGLISH
+{
+    "yes": {
+      "message": "Yes",
+      "description": ""
+    },
+    "no": {
+      "message": "No",
+      "description": ""
+    },
+    "no_photos": {
+      "message": "No Photos",
+      "description": ""
+    },
+    "not_available": {
+      "message": "Ν/A",
+      "description": ""
+    },
+    "namechrome": {
+      "message": "Tesla Inventory Insight",
+      "description": ""
+    },
+    "description": {
+      "message": "This Chrome extension extracts and processes Tesla vehicle data from inventory pages, capturing vehicle IDs and details for easier analysis. Users can retrieve, view, and store vehicle metadata, ensuring seamless access to Tesla inventory updates. Ideal for tracking car availability and specifications directly from Tesla’s online inventory.",
+      "description": ""
+    },
+    "titledonatebutton": {
+      "message": "Donate",
+      "description": ""
+    },
+    "facility": {
+      "message": "Production Facility",
+      "description": ""
+    },
+    "days_in_stock": {
+      "message": "Days in Inventory",
+      "description": ""
+    },
+    "manufactory_date": {
+      "message": "Manufacture Date",
+      "description": ""
+    },
+    "price_variation": {
+      "message": "Price Variation",
+      "description": ""
+    },
+    "battery_capacity": {
+      "message": "Battery Capacity",
+      "description": ""
+    },
+    "heatpump": {
+      "message": "Heat Pump System",
+      "description": ""
+    },
+    "vehicle_photos": {
+      "message": "Vehicle Photos",
+      "description": ""
+    },
+    "status": {
+      "message": "Data temporarily unavailable",
+      "description": ""
+    },
+    "retrieving_data": {
+      "message": "Retrying to fetch data...",
+      "description": ""
+    },
+    "take_a_moment": {
+      "message": "This might take a moment.73",
+      "description": ""
+    }
+}
