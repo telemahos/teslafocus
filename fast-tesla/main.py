@@ -19,10 +19,10 @@ app = FastAPI()
 # Füge CORS Middleware hinzu
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["chrome-extension://phphidmlnlniokffpoehdcpkanccmfmj"],  # Erlaube alle Ursprünge, passe dies nach Bedarf an
+    allow_origins=["chrome-extension://mjodgkncladbbcmimlfiapplbpbkhcla"],  # Erlaubt Ihre Chrome-Erweiterung
     allow_credentials=True,
-    allow_methods=["*"],  # Erlaube alle Methoden
-    allow_headers=["*"],  # Erlaube alle Header
+    allow_methods=["*"],  # Erlaubt alle HTTP-Methoden (GET, POST, usw.)
+    allow_headers=["*"],  # Erlaubt alle Header
 )
 
 # Datenbank-Setup

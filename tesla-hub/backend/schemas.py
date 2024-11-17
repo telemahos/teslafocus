@@ -131,6 +131,14 @@ class ShowTeamMember(TeamMemberBase):
 
 # Cars
 # ------------------------------------
+# Pydantic-Modell für die Anfrage
+class IdList(BaseModel):
+    ids: List[str]
+
+# Pydantic-Modell für die Anfrage
+class VinList(BaseModel):
+    vins: List[str]
+
 # Pydantic-Modell für die Antwort
 class CarResponse(BaseModel):
     vin: str
@@ -151,6 +159,9 @@ class CarResponse(BaseModel):
     price_difference: Optional[float]
     price_trend: Optional[str]  # Das Plus- oder Minuszeichen
     current_price: Optional[float]
+
+    class Config():
+        orm_mode = True
 
 class CarsResponse(BaseModel):
     cars: List[CarResponse]

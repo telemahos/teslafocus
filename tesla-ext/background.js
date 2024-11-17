@@ -2,7 +2,8 @@
 const API_URL_PATTERN = "https://www.tesla.com/inventory/api/v4/inventory-results?query=*";
 const REQUEST_STORAGE_KEY = 'apiRequests';
 const ID_STORAGE_KEY = 'extractedIds'; 
-const API_ENDPOINT = 'http://127.0.0.1:8000/ids/';
+const API_ENDPOINT = 'http://127.0.0.1:8000/api/cars/ids/';
+// const API_ENDPOINT = 'http://127.0.0.1:8000/ids/';
 // const API_ENDPOINT = 'http://93.127.202.194:8000/ids/';
 
 // Cache for managing request data
