@@ -20,8 +20,6 @@ def calculate_battery_capacity(model, trim, wltp_range):
     if model == "m3" and trim == "M3RWD":
         if range_value == 409:
             return 53.1
-        elif range_value == 440: 
-            return 55.0 #LFP
         elif range_value == 448: 
             return 55.0 #LFP
         elif range_value == 491:
@@ -63,4 +61,4 @@ def calculate_battery_capacity(model, trim, wltp_range):
         if range_value == 514:
             return 78.1
 
-    # return None  # Return None if no matching condition is found
+    return None  # Return None if no matching condition is found

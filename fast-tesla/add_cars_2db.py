@@ -5,14 +5,17 @@ from sqlalchemy import create_engine, Column, Integer, String, Float, DateTime, 
 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
 from datetime import datetime
 from battery_utils import calculate_battery_capacity
-
+import os
+# db_path = os.path.abspath('../tesla-hub/teslafocus.db')
 
 # Logging setup
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # SQLAlchemy setup
-engine = create_engine('sqlite:///tesla_inventory.db', echo=True)
+# engine = create_engine('sqlite:///tesla_inventory.db', echo=True)
+# engine = create_engine(f'sqlite:///{db_path}', echo=True)
+engine = create_engine(f'sqlite:///../tesla-hub/teslafocus.db', echo=True)
 
 # engine = create_engine('postgresql://postgres:changethis@localhost:5432/app', echo=True)
 
@@ -91,7 +94,7 @@ class Photos(Base):
 # Define the ModelStats model with a timestamp column
 class ModelStats(Base):
     __tablename__ = 'model_stats'
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     model = Column(String)  #,unique=True
     min_price = Column(Float)
     max_price = Column(Float)
@@ -122,7 +125,7 @@ def process_model_stats(session, model_data, timestamp):
         avg_price_rounded = round(avg_price, -3)
 
         # Create a new record instead of updating the existing one
-        model_stat = ModelStats(
+        model_stats = ModelStats(
             model=model,
             min_price=min_price,
             max_price=max_price,
@@ -130,15 +133,23 @@ def process_model_stats(session, model_data, timestamp):
             count=count,
             timestamp=timestamp  # Use the extracted timestamp
         )
-        session.add(model_stat)
+        session.add(model_stats)
 
     session.commit()
 
 
-#        
+# Logging setup
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+# logger = logging.getLogger(__name__)
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.ERROR)  # Zeige Fehler direkt in der Konsole
+formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+console_handler.setFormatter(formatter)
+logger.addHandler(console_handler)
+
 def process_json_file(json_filename):
     try:
-        # Überprüfen Sie, ob der Dateiname einen Zeitstempel enthält
+        # Überprüfen, ob der Dateiname einen Zeitstempel enthält
         if '_' not in json_filename:
             raise ValueError("Der Dateiname muss einen Zeitstempel enthalten.")
             
@@ -150,114 +161,124 @@ def process_json_file(json_filename):
             data = json.load(file)
         
         with Session() as session:
+            # Zuerst alle Fahrzeuge auf inaktiv setzen
+            session.query(Cars).update({Cars.active: 0})
+            
             vehicles = data.get('results', [])
             processed_vins = set()
 
             for vehicle in vehicles:
-                if not isinstance(vehicle, dict):
-                    logger.warning(f"Skipping invalid vehicle data: {vehicle}")
-                    continue
-                
-                vin = vehicle.get('VIN')
-                if vin in processed_vins:
-                    logger.warning(f"Vin {vin} wurde bereits verarbeitet. Skipping.")
-                    continue
-                processed_vins.add(vin)
+                try:
+                    if not isinstance(vehicle, dict):
+                        raise ValueError(f"Ungültige Fahrzeugdaten: {vehicle}")
+                    
+                    vin = vehicle.get('VIN')
+                    if not vin:
+                        raise ValueError("VIN fehlt oder ist leer.")
 
-                # Process constant data
-                car = session.query(Cars).filter_by(vin=vin).first()
-                if not car:
-                    wltp_range = get_wltp_range(vehicle)
-                    model = vehicle.get('Model')
-                    trim = ','.join(vehicle.get('TRIM', [])) if isinstance(vehicle.get('TRIM'), list) else ''
-                    
-                    battery_capacity = calculate_battery_capacity(model, trim, wltp_range)
-                    
-                    car = Cars(
-                        vin=vehicle.get('VIN'),
-                        model=vehicle.get('Model'),
-                        trim=','.join(vehicle.get('TRIM', [])) if isinstance(vehicle.get('TRIM'), list) else '',
-                        trim_name=vehicle.get('TrimName'),
-                        year=int(vehicle.get('Year', 0)),
-                        odometer=vehicle.get('Odometer', 0),
-                        odometer_type=vehicle.get('OdometerType'),
-                        color=vehicle.get('PAINT', [''])[0] if isinstance(vehicle.get('PAINT'), list) else '',
-                        interior=vehicle.get('INTERIOR', [''])[0] if isinstance(vehicle.get('INTERIOR'), list) else '',
-                        damage_disclosure=vehicle.get('DamageDisclosure', False),
-                        factory_code=vehicle.get('FactoryCode'),
-                        wltp_range=get_wltp_range(vehicle),
-                        battery_capacity=battery_capacity,
-                        cabin_config=','.join(vehicle.get('CABIN_CONFIG', [])) if isinstance(vehicle.get('CABIN_CONFIG'), list) else '',
-                        country_code=vehicle.get('CountryCode'),
-                        city=vehicle.get('City'),
-                        first_registration_date=datetime.strptime(vehicle.get('FirstRegistrationDate', ''), '%Y-%m-%dT%H:%M:%S') if vehicle.get('FirstRegistrationDate') else None,
-                        currency_code=vehicle.get('CurrencyCode'),
-                        damage_disclosure_status=vehicle.get('DamageDisclosureStatus'),
-                        factory_gated_date=datetime.strptime(vehicle.get('FactoryGatedDate', ''), '%Y-%m-%dT%H:%M:%S.%f') if vehicle.get('FactoryGatedDate') else None,
-                        has_damage_photos=vehicle.get('HasDamagePhotos', False),
-                        vehicle_history=vehicle.get('VehicleHistory'),
-                        warranty_battery_exp_date=datetime.strptime(vehicle.get('WarrantyBatteryExpDate', ''), '%Y-%m-%dT%H:%M:%SZ') if vehicle.get('WarrantyBatteryExpDate') else None,
-                        warranty_battery_is_expired=vehicle.get('WarrantyBatteryIsExpired', False),
-                        warranty_battery_mile=vehicle.get('WarrantyBatteryMile'),
-                        warranty_battery_year=vehicle.get('WarrantyBatteryYear'),
-                        warranty_drive_unit_exp_date=datetime.strptime(vehicle.get('WarrantyDriveUnitExpDate', ''), '%Y-%m-%dT%H:%M:%SZ') if vehicle.get('WarrantyDriveUnitExpDate') else None,
-                        warranty_drive_unit_mile=vehicle.get('WarrantyDriveUnitMile'),
-                        warranty_drive_unit_year=vehicle.get('WarrantyDriveUnitYear'),
-                        warranty_mile=vehicle.get('WarrantyMile'),
-                        warranty_vehicle_exp_date=datetime.strptime(vehicle.get('WarrantyVehicleExpDate', ''), '%Y-%m-%dT%H:%M:%SZ') if vehicle.get('WarrantyVehicleExpDate') else None,
-                        warranty_vehicle_is_expired=vehicle.get('WarrantyVehicleIsExpired', False),
-                        warranty_year=vehicle.get('WarrantyYear'),
-                        used_vehicle_limited_warranty_mile=vehicle.get('UsedVehicleLimitedWarrantyMile'),
-                        used_vehicle_limited_warranty_year=vehicle.get('UsedVehicleLimitedWarrantyYear'),
-                        odometer_type_short=vehicle.get('OdometerTypeShort'),
-                        first_entry_date=datetime.strptime(json_filename.split('_')[2] + '_' + json_filename.split('_')[3].split('.')[0], '%Y%m%d_%H%M%S'),
-                        photos_count=len(vehicle.get('VehiclePhotos', [])),
-                        active=True,
-                        OptionCodeList=vehicle.get('OptionCodeList')
+                    # Process constant data
+                    car = session.query(Cars).filter_by(vin=vin).first()
+                    if not car:
+                        wltp_range = get_wltp_range(vehicle)
+                        model = vehicle.get('Model')
+                        trim = ','.join(vehicle.get('TRIM', [])) if isinstance(vehicle.get('TRIM'), list) else ''
+                        if not model:
+                            raise ValueError(f"Modell für VIN {vin} fehlt.")
+                        
+                        try:
+                            battery_capacity = calculate_battery_capacity(model, trim, wltp_range)
+                        except Exception as e:
+                            logger.error(f"Error calculating battery capacity: {str(e)}")
+                            battery_capacity = None
+
+                        car = Cars(
+                            vin=vin,
+                            model=model,
+                            trim=','.join(vehicle.get('TRIM', [])) if isinstance(vehicle.get('TRIM'), list) else '',
+                            trim_name=vehicle.get('TrimName'),
+                            year=int(vehicle.get('Year', 0)),
+                            odometer=vehicle.get('Odometer', 0),
+                            odometer_type=vehicle.get('OdometerType'),
+                            color=vehicle.get('PAINT', [''])[0] if isinstance(vehicle.get('PAINT'), list) else '',
+                            interior=vehicle.get('INTERIOR', [''])[0] if isinstance(vehicle.get('INTERIOR'), list) else '',
+                            damage_disclosure=vehicle.get('DamageDisclosure', False),
+                            factory_code=vehicle.get('FactoryCode'),
+                            wltp_range=wltp_range,
+                            battery_capacity=battery_capacity,
+                            cabin_config=','.join(vehicle.get('CABIN_CONFIG', [])) if isinstance(vehicle.get('CABIN_CONFIG'), list) else '',
+                            country_code=vehicle.get('CountryCode'),
+                            city=vehicle.get('City'),
+                            first_registration_date=datetime.strptime(vehicle.get('FirstRegistrationDate', ''), '%Y-%m-%dT%H:%M:%S') if vehicle.get('FirstRegistrationDate') else None,
+                            currency_code=vehicle.get('CurrencyCode'),
+                            damage_disclosure_status=vehicle.get('DamageDisclosureStatus'),
+                            factory_gated_date=datetime.strptime(vehicle.get('FactoryGatedDate', ''), '%Y-%m-%dT%H:%M:%S.%f') if vehicle.get('FactoryGatedDate') else None,
+                            has_damage_photos=vehicle.get('HasDamagePhotos', False),
+                            vehicle_history=vehicle.get('VehicleHistory'),
+                            warranty_battery_exp_date=datetime.strptime(vehicle.get('WarrantyBatteryExpDate', ''), '%Y-%m-%dT%H:%M:%SZ') if vehicle.get('WarrantyBatteryExpDate') else None,
+                            warranty_battery_is_expired=vehicle.get('WarrantyBatteryIsExpired', False),
+                            warranty_battery_mile=vehicle.get('WarrantyBatteryMile'),
+                            warranty_battery_year=vehicle.get('WarrantyBatteryYear'),
+                            warranty_drive_unit_exp_date=datetime.strptime(vehicle.get('WarrantyDriveUnitExpDate', ''), '%Y-%m-%dT%H:%M:%SZ') if vehicle.get('WarrantyDriveUnitExpDate') else None,
+                            warranty_drive_unit_mile=vehicle.get('WarrantyDriveUnitMile'),
+                            warranty_drive_unit_year=vehicle.get('WarrantyDriveUnitYear'),
+                            warranty_mile=vehicle.get('WarrantyMile'),
+                            warranty_vehicle_exp_date=datetime.strptime(vehicle.get('WarrantyVehicleExpDate', ''), '%Y-%m-%dT%H:%M:%SZ') if vehicle.get('WarrantyVehicleExpDate') else None,
+                            warranty_vehicle_is_expired=vehicle.get('WarrantyVehicleIsExpired', False),
+                            warranty_year=vehicle.get('WarrantyYear'),
+                            used_vehicle_limited_warranty_mile=vehicle.get('UsedVehicleLimitedWarrantyMile'),
+                            used_vehicle_limited_warranty_year=vehicle.get('UsedVehicleLimitedWarrantyYear'),
+                            odometer_type_short=vehicle.get('OdometerTypeShort'),
+                            first_entry_date=timestamp,
+                            photos_count=len(vehicle.get('VehiclePhotos', [])),
+                            active=1,  # Neues Fahrzeug ist aktiv
+                            OptionCodeList=vehicle.get('OptionCodeList')
+                        )
+                        session.add(car)
+                        session.flush()
+                    else:
+                        car.active = 1  # Existierendes Fahrzeug auf aktiv setzen
+                        car.last_updated = datetime.utcnow()
+                        car.photos_count = len(vehicle.get('VehiclePhotos', []))
+
+                    processed_vins.add(vin)
+
+                    # Process variable data (e.g., price changes)
+                    price = Prices(
+                        car_id=car.id,
+                        price=vehicle.get('InventoryPrice', 0.0),
+                        date=timestamp
                     )
-                    session.add(car)
-                    session.flush()
-                else:
-                    car.active = True
-                    car.last_updated = datetime.utcnow()
-                    car.photos_count = len(vehicle.get('VehiclePhotos', []))
+                    session.add(price)
 
-                # Process variable data (e.g., price changes)
-                price = Prices(
-                    car_id=car.id,
-                    price=vehicle.get('InventoryPrice', 0.0),
-                    date=timestamp
-                )
-                session.add(price)
-
-                # Process photos with uniqueness check
-                vehicle_photos = vehicle.get('VehiclePhotos', [])
-                for photo in vehicle_photos:
-                    image_url = photo.get('imageUrl')
-                    if image_url:
-                        # Prüfen, ob das Foto bereits vorhanden ist
+                    # Process photos
+                    vehicle_photos = vehicle.get('VehiclePhotos', [])
+                    for photo in vehicle_photos:
+                        image_url = photo.get('imageUrl')
+                        if not image_url:
+                            logger.warning(f"Foto ohne URL gefunden: {photo}")
+                            continue
+                        
                         existing_photo = session.query(Photos).filter_by(car_id=car.id, image_url=image_url).first()
                         if not existing_photo:
-                            photo_entry = Photos(
-                                car_id=car.id,
-                                image_url=image_url
-                            )
+                            photo_entry = Photos(car_id=car.id, image_url=image_url)
                             session.add(photo_entry)
 
-            # Setzen Sie den active-Status auf False für Fahrzeuge, die nicht in der aktuellen Liste sind
-            cars_to_deactivate = session.query(Cars).filter(Cars.vin.notin_(processed_vins), Cars.active == True).all()
-            for car_to_deactivate in cars_to_deactivate:
-                car_to_deactivate.active = False
-                car_to_deactivate.last_updated = datetime.utcnow()
-
-            # Process model stats and pass the timestamp from the filename
-            process_model_stats(session, data, timestamp)
+                except Exception as e:
+                    logger.error(f"Fehler beim Verarbeiten des Fahrzeugs mit VIN {vin}: {e}")
 
             # Commit der Änderungen
             session.commit()
 
+            # Process model stats
+            try:
+                logger.info("Verarbeite Model-Statistiken.")
+                process_model_stats(session, data, timestamp)
+            except Exception as e:
+                logger.error(f"Fehler beim Verarbeiten der Model-Statistiken: {e}")
+
     except Exception as e:
-        logger.error(f"Fehler beim Verarbeiten der JSON-Datei: {e}")
+        logger.error(f"Fehler beim Verarbeiten der JSON-Datei {json_filename}: {e}")
+
 
 def get_wltp_range(vehicle):
     option_code_specs = vehicle.get('OptionCodeSpecs', {})
@@ -269,7 +290,6 @@ def get_wltp_range(vehicle):
             return option.get('name', '')
     
     return ''  # Return an empty string if no WLTP range is found
-
 
         
 if __name__ == '__main__':
