@@ -3,9 +3,12 @@ import sys
 import logging
 from sqlalchemy import create_engine, Column, Integer, String, Float, DateTime, ForeignKey, Boolean
 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
+from sqlalchemy.sql.expression import cast
 from datetime import datetime
+from sqlalchemy.types import Date
 from battery_utils import calculate_battery_capacity
 import os
+import time
 # db_path = os.path.abspath('../tesla-hub/teslafocus.db')
 
 # Logging setup
@@ -15,7 +18,7 @@ logger = logging.getLogger(__name__)
 # SQLAlchemy setup
 # engine = create_engine('sqlite:///tesla_inventory.db', echo=True)
 # engine = create_engine(f'sqlite:///{db_path}', echo=True)
-engine = create_engine(f'sqlite:///../tesla-hub/teslafocus.db', echo=True)
+engine = create_engine(f'sqlite:///../tesla-hub/teslafocus.db', echo=False)
 
 # engine = create_engine('postgresql://postgres:changethis@localhost:5432/app', echo=True)
 
@@ -101,6 +104,8 @@ class ModelStats(Base):
     avg_price = Column(Float)
     count = Column(Integer)
     timestamp = Column(DateTime, default=datetime.utcnow)
+    country_code = Column(String)  
+    currency_code = Column(String) 
 
 
 # Create the tables if they don't exist
@@ -110,9 +115,17 @@ Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 
 
-def process_model_stats(session, model_data, timestamp):
+def process_model_stats(session, model_data, timestamp, country_code, currency_code):
     # Extract the model price stats from the provided JSON data
     model_price_stats = model_data.get('model_price_stats', {})
+
+    if not model_price_stats:
+        logger.warning(f"Keine Model-Preisdaten vorhanden.")
+        return
+
+    # Extrahiere country_code und currency_code aus dem Eingabedaten
+    country_code = country_code
+    currency_code = currency_code
 
     for model, stats in model_price_stats.items():
         # Extract stats for each model
@@ -121,8 +134,23 @@ def process_model_stats(session, model_data, timestamp):
         avg_price = stats.get('avg')
         count = stats.get('count')
 
+        if avg_price is None:
+            logger.warning(f"Durchschnittspreis fehlt für Modell {model}")
+            continue
+
         # Round avg_price to the nearest thousand
         avg_price_rounded = round(avg_price, -3)
+
+        existing_entry = session.query(ModelStats).filter_by(
+            model=model,
+            timestamp=timestamp,
+            country_code=country_code,
+            currency_code=currency_code
+        ).first()
+
+        if existing_entry:
+            logger.info(f"Eintrag für Modell {model} mit Zeitstempel {timestamp} existiert bereits.")
+            continue
 
         # Create a new record instead of updating the existing one
         model_stats = ModelStats(
@@ -131,11 +159,17 @@ def process_model_stats(session, model_data, timestamp):
             max_price=max_price,
             avg_price=avg_price_rounded,
             count=count,
-            timestamp=timestamp  # Use the extracted timestamp
+            timestamp=timestamp,  # Use the extracted timestamp
+            country_code=country_code,  # Assign country_code
+            currency_code=currency_code  # Assign currency_code
         )
         session.add(model_stats)
 
-    session.commit()
+    try:
+        session.commit()
+    except Exception as e:
+        logger.error(f"Fehler beim Commit der Model-Statistiken: {e}")
+        session.rollback()
 
 
 # Logging setup
@@ -175,7 +209,7 @@ def process_json_file(json_filename):
                     vin = vehicle.get('VIN')
                     if not vin:
                         raise ValueError("VIN fehlt oder ist leer.")
-
+                                        
                     # Process constant data
                     car = session.query(Cars).filter_by(vin=vin).first()
                     if not car:
@@ -190,6 +224,9 @@ def process_json_file(json_filename):
                         except Exception as e:
                             logger.error(f"Error calculating battery capacity: {str(e)}")
                             battery_capacity = None
+
+                        country_code = vehicle.get('CountryCode')  # Aus dem JSON des Fahrzeugs extrahieren
+                        currency_code = vehicle.get('CurrencyCode') 
 
                         car = Cars(
                             vin=vin,
@@ -272,7 +309,7 @@ def process_json_file(json_filename):
             # Process model stats
             try:
                 logger.info("Verarbeite Model-Statistiken.")
-                process_model_stats(session, data, timestamp)
+                process_model_stats(session, data, timestamp, country_code, currency_code)
             except Exception as e:
                 logger.error(f"Fehler beim Verarbeiten der Model-Statistiken: {e}")
 

@@ -1,5 +1,12 @@
 # ToDo:
 
+06.12.24
+- Docker is working on VPS. It is successfully scraping de_invetory
+- no I need to automatically scrape every 2 hours the de_invetory
+- And I have to setup the tesla-hub application, for the DB and the main Applikation.
+- The crontab script should take every generated JSON File and insert it to the SQLite DB
+- The main app (Tesla-Hub) should run 24/7 
+
 18.11.24
 - Update the DB, with new daily data
 - Make options page to login in the extension

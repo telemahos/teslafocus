@@ -22,6 +22,44 @@ pip install "uvicorn[standard]" gunicorn
 
 uvicorn main:app --host 93.127.202.194 --port 8000 --workers 4
 
+-- UPDATE --
+uvicorn main:app --host 93.127.202.194 --port 8073
+
+-- PYTHON VERSION AUSWAEHLEN --
+- sudo alternatives --config python3
+- python3 --version
+
+--- Mit SSL CERTIFICATE: ---
+1. uvicorn main:app --host 93.127.202.194 --port 8073 --ssl-keyfile=/etc/letsencrypt/live/srv516119.hstgr.cloud/privkey.pem --ssl-certfile=/etc/letsencrypt/live/srv516119.hstgr.cloud/fullchain.pem
+2. LAUFT IM HINTERGRUND mit SSL:
+nohup uvicorn main:app --host 93.127.202.194 --port 8073 --ssl-keyfile=/etc/letsencrypt/live/srv516119.hstgr.cloud/privkey.pem --ssl-certfile=/etc/letsencrypt/live/srv516119.hstgr.cloud/fullchain.pem > uvicorn_ssl.log 2>&1 &
+
+Wichtige Hinweise:
+- Sicherheit: Binden an eine externe IP-Adresse kann Sicherheitsrisiken bergen, besonders wenn Sie SSL verwenden. Es ist oft besser, einen Reverse Proxy wie Nginx zu verwenden, der SSL-Terminierung übernimmt und den Verkehr an Ihren Uvicorn-Server weiterleitet.
+- Log-Datei: Überprüfen Sie regelmäßig die uvicorn_ssl.log Datei auf Fehler oder Warnungen, um sicherzustellen, dass Ihre Anwendung ordnungsgemäß läuft.
+- Prozessverwaltung: Da nohup den Prozess im Hintergrund ausführt, können Sie den Prozess mit ps aux | grep uvicorn finden, um zu sehen, ob er läuft. Um ihn zu beenden, verwenden Sie kill <PID>.
+- Automatischer Neustart: Mit nohup läuft der Prozess, bis er manuell gestoppt wird oder ein Fehler auftritt. Für Produktionsumgebungen könnte eine Lösung mit systemd oder einem Prozessmanager wie PM2 besser geeignet sein, da sie automatisches Neustarten unterstützen.
+#######################
+
+
+-- DOCKER IM VPS --
+- sudo systemctl start docker
+- sudo systemctl status docker
+- docker pull mcr.microsoft.com/playwright:v1.48.0-focal
+- docker run --rm -v $(pwd)/data:/app/data tesla-scraper
+- docker build -t tesla-scraper .
+- docker build -t tesla-scraper . --no-cache
+- docker run -it tesla-scraper (Run Scraper)
+- docker run -d tesla-scraper (Run Scraper im Hintergrund)
+***SOS*** Για να αποθηκευτεί στον Local Serverto JSON File:
+- docker run -it -v /home/srv516119.hstgr.cloud/public_html/teslafocus/tesla-scraper/data/de:/home/srv516119.hstgr.cloud/public_html/teslafocus/tesla-scraper/data/de tesla-scraper
+
+Για να μπεις μεσ στο DOcker file system:
+- docker run -it --rm -v $(pwd)/data:/app/data tesla-scraper /bin/bash
+
+
+
+
 -- Number Formater --
 npm install @coders-tm/vue-number-format
 from: https://vuejsexamples.com/easy-formatted-numbers-currency-and-percentage-with-input-directive-mask-for-vue-js/
